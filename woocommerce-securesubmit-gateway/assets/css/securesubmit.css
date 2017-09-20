@@ -1,0 +1,701 @@
+div.payment_method_securesubmit > div,
+div.payment_method_securesubmit > label,
+div.payment_method_securesubmit fieldset,
+div.payment_method_securesubmit input[type="tel"],
+div.payment_method_securesubmit input[type="text"],
+div.payment_method_securesubmit image {
+  display: block !important;
+}
+
+/*fix css mistake in rosa theme*/
+div.payment_method_securesubmit script {
+    display:none !important;
+}
+
+/* iframe style fix */
+
+.payment_method_securesubmit iframe {
+   width: 100%;
+   margin-bottom: 0;
+}
+
+html body .woocommerce .payment_method_securesubmit iframe{
+    opacity:1 !important;
+}
+
+/* Account Page Saved Cards */
+
+.account-saved-card-logo {
+    float: left;
+    margin: 0 15px;
+    position: relative;
+    height: 100%;
+}
+
+.account-saved-cards-list .saved-card:hover .card-type-logo{
+    background-position:top !important;
+}
+
+.account-saved-card-logo:after,
+.account-saved-card-logo::after{
+    content: '';
+    position: absolute;
+    height: 70%;
+    width: 1px;
+    background: #e4e4e3;
+    right: -10px;
+    top: 15%;
+}
+
+.account-saved-cards-list{
+    margin-bottom:60px;
+}
+
+.account-saved-cards-list .saved-card:hover{
+    border-color:#337ab7;
+}
+
+.account-saved-cards-list form {
+    float: right;
+    position: relative;
+    height: 100%;
+}
+
+.account-saved-cards-list form input[type="submit"] {
+    text-indent: -100000px;
+    position: relative;
+    height: 40px;
+    border-radius: 0px;
+    background: url(../images/delete.png) no-repeat top left transparent;
+    cursor: pointer;
+    outline: none;
+    padding: 0px;
+    width: 30px;
+    margin: 10px 15px;
+}
+
+.account-saved-cards-list form input[type="submit"]:hover{
+    background-position:top right;
+}
+
+/* remove styles from fieldsets */
+
+.payment_method_securesubmit fieldset {
+   border: 0;
+   font-family: inherit;
+   font-size: 100%;
+   font-style: inherit;
+   font-weight: inherit;
+   margin: 0;
+   outline: 0;
+   padding: 0;
+   vertical-align: baseline;
+   padding: 0;
+   margin: 0;
+	 background-color: #fff !important;
+}
+
+/* general styles */
+
+.no-bottom-margin {
+   margin-bottom: 0 !important;
+}
+
+.no-bottom-padding {
+   padding-bottom: 0 !important;
+}
+
+.no-top-margin {
+   margin-top: 0 !important;
+}
+
+.no-top-padding {
+   padding-top: 0 !important;
+}
+
+/* the entire container */
+
+.woocommerce-checkout #payment .payment_method_securesubmit div.payment_box {
+   font-family: Arial,Helvetica Neue,Helvetica,sans-serif !important;
+   background: #fff !important;
+   border-radius: 10px;
+   border: 1px solid #dfdcde;
+   padding: 0;
+   padding-bottom: 2.5em;
+}
+
+
+.woocommerce-checkout #payment .payment_method_securesubmit div.payment_box:before {
+   top: -0.99em;
+}
+
+/* secure submit branded header */
+
+.securesubmit-header {
+   background: #fff;
+   padding: 1em 2em;
+   border-radius: 10px 10px 0 0;
+   border-bottom: 1px solid #dfdcde;
+   margin-bottom: 1em;
+}
+
+.securesubmit-header .secure {
+   display: block;
+   float: left;
+   width: 50px;
+   height: 50px;
+   background-image: url(../images/ss-shield@2x.png);
+   background-size: 50px 50px;
+   margin-left: -8px;
+}
+
+/* custom description paragraph */
+
+.securesubmit-description {
+   font-size: 14px;
+   padding: 5px 1em 0 1em;
+}
+
+/* section headers */
+
+.ss-section-header {
+   display: block;
+   width: 100%;
+   clear: both;
+}
+
+.ss-section-header h6 {
+   font-family: Arial,Helvetica Neue,Helvetica,sans-serif !important;
+   font-size: 22px !important;
+   color: #acacac !important;
+   margin: 0 !important;
+   padding: 0 !important;
+   text-transform: capitalize !important;
+   float: left;
+   letter-spacing: normal !important;
+}
+
+/* saved cards */
+
+/* display the 'select payment method' radio buttons even if hidden in theme */
+.wc_payment_method.payment_method_securesubmit .saved-card-selector input[type=radio] {
+	display: inline-block;
+}
+
+.saved-creditcards-list .button {
+   font-size: 12px !important;
+   background-color: #acacac !important;
+   border: 1px #878686 solid !important;
+   color: #fff !important;
+   line-height: normal !important;
+   height: auto !important;
+   -webkit-border-radius: 0px !important;
+   -moz-border-radius: 0px !important;
+   border-radius: 0px !important;
+   font-weight: lighter !important;
+   }
+
+.saved-creditcards-list .button:hover {
+   background-color: #878686 !important;
+}
+
+.saved-card {
+   border: 1px #ccc solid;
+   padding: 0px;
+   margin: 5px 0px;
+   height: 63px;
+   clear: both;
+   background-size: 88px 46px;
+   background-repeat: no-repeat;
+   background-position: center right;
+}
+
+.saved-card.active {
+   border-color: #337ab7;
+}
+
+.saved-card p {
+   margin: 0 !important;
+   padding: 0 !important;
+   display: block !important;
+   line-height: 20px !important;
+   font-size: 16px !important;
+   font-weight: bold !important;
+}
+
+.saved-card p span {
+   font-size: 12px;
+   font-weight: normal;
+   color: #999999;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+}
+
+.saved-card-selector {
+   display: inline-block;
+   float: left;
+   width: 45px;
+   padding: 9px 0px 11px 0px;
+   text-align: center;
+   border-right: 1px #e4e4e3 solid;
+   margin-top: 9px;
+}
+
+.saved-card-selector input {
+   margin: 0 !important;
+}
+
+.saved-card-info-new {
+   display: inline-block;
+   float: left;
+   padding-left: 15px;
+   height: 41px;
+   padding-top: 22px;
+}
+
+.saved-card-info {
+   display: inline-block;
+   float: left;
+   padding-left: 15px;
+   height: 51px;
+   padding-top: 12px;
+}
+
+.saved-card .card-type-logo {
+   display: inline-block;
+   float: right;
+   width: 88px;
+   height: 46px;
+   margin-top: 8px;
+   background-size: 88px 92px;
+   background-position: bottom;
+}
+
+.saved-card.active .card-type-logo {
+   background-position: top;
+}
+
+.saved-card-visa .card-type-logo {
+   background-image: url(../images/ss-saved-visa@2x.png);
+}
+
+.saved-card-mastercard .card-type-logo {
+   background-image: url(../images/ss-saved-mastercard@2x.png);
+}
+
+.saved-card-amex .card-type-logo {
+   background-image: url(../images/ss-saved-amex@2x.png);
+}
+
+.saved-card-discover .card-type-logo {
+   background-image: url(../images/ss-saved-discover@2x.png);
+}
+
+.saved-card-jcb .card-type-logo {
+   background-image: url(../images/ss-saved-jcb@2x.png);
+}
+
+.saved-card-new {
+   margin-bottom: 0;
+}
+
+.securesubmit_new_card_info {
+   border: 1px #337ab7 solid;
+   margin: -1px 1em 0 1em;
+   border-top: 0;
+   padding: .4em 2.5em 1.2em 2.5em;
+   background: #fff;
+}
+
+/* error */
+
+.securesubmit_new_card .woocommerce_error {
+   margin: -1px 1em 0 1em !important;
+   border: 1px #ce1025 solid !important;
+   background: #ce1025;
+   color: #fff;
+}
+
+.securesubmit_new_card .woocommerce-error:before {
+   color: #fff !important;
+   top: 22px !important;
+}
+
+/* logged out, no saved cards */
+
+.no-saved-cards .securesubmit_new_card .securesubmit_new_card_info {
+   border: 0;
+   margin: 0;
+   padding: 0;
+   background: none;
+}
+
+/* saved cards - smaller screens */
+@media only screen and (max-width : 530px) {
+   .saved-card {
+      background-size: 50px auto;
+   }
+   .saved-card p {
+      font-size: 14px;
+   }
+}
+
+@media only screen and (max-width : 445px) {
+   .saved-card {
+      background: none;
+   }
+}
+
+/* horizontal break */
+
+.woocommerce-checkout #payment .payment_method_securesubmit hr {
+   width: 100%;
+   background-color: #dfdcde;
+   margin: 20px 0px;
+}
+
+/* take out some of the space next to radio buttons */
+
+.woocommerce-checkout #payment ul.payment_methods li input {
+   margin: 0 .5em 0 0;
+}
+
+/* credit card images */
+
+.woocommerce-checkout #payment ul.payment_methods li.payment_method_securesubmit img {
+	width: 172px;
+	height: 24px;
+	display: inline-block;
+}
+
+/* credit card fields labels */
+
+#payment .securesubmit-content div.form-row {
+	padding: 1em;
+}
+
+.payment_method_securesubmit div.payment_box .securesubmit_new_card .securesubmit_new_card_info label {
+   text-transform: uppercase;
+   font-size: 13px;
+   letter-spacing: 1px;
+   white-space: nowrap;
+}
+
+.securesubmit-save-cards label {
+   white-space: normal !important;
+}
+
+#heartland-field-body, #heartland-field-wrapper {
+   width: 100%;
+}
+
+#securesubmit_card_number {
+   /*background-image: url(../../assets/images/ss-inputcard-blank@2x.png); */
+   background-position: right;
+   background-repeat: no-repeat;
+   background-size: 77px 40px;
+}
+
+.securesubmit_new_card .card-type-logo {
+   display: block;
+   width: 56px;
+   height: 44px;
+   position: absolute;
+   top: 4px;
+   right: 10px;
+   background-position: bottom;
+   background-repeat: no-repeat;
+   background-size: 56px auto;
+}
+
+.cc-number {
+   display: block;
+   background: blue;
+   width: 100%;
+   position: relative;
+}
+
+#securesubmit_card_number.valid + .card-type-logo {
+   background-position: top;
+}
+
+#securesubmit_card_number.card-type-visa + .card-type-logo {
+   background-image: url(../../assets/images/ss-inputcard-visa@2x.png);
+}
+
+#securesubmit_card_number.card-type-jcb + .card-type-logo {
+   background-image: url(../../assets/images/ss-inputcard-jcb@2x.png);
+}
+
+#securesubmit_card_number.card-type-discover + .card-type-logo {
+   background-image: url(../../assets/images/ss-inputcard-discover@2x.png);
+}
+
+#securesubmit_card_number.card-type-amex + .card-type-logo {
+   background-image: url(../../assets/images/ss-inputcard-amex@2x.png);
+}
+
+#securesubmit_card_number.card-type-mastercard + .card-type-logo {
+   background-image: url(../../assets/images/ss-inputcard-mastercard@2x.png);
+}
+
+.ss-cvv {
+   position: relative;
+}
+
+.ss-cvv-icon {
+   display: block;
+   width: 59px;
+   height: 39px;
+   background-image: url(../images/ss-cvv@2x.png);
+   background-size: 59px auto;
+   background-position: top;
+   position: absolute;
+   top: 6px;
+   right: 7px;
+}
+
+.cvv-amex {
+   background-position: bottom;
+}
+
+/* inputs */
+
+.payment_method_securesubmit input {
+   font-family: Arial,Helvetica Neue,Helvetica,sans-serif;
+   border: 1px solid #666;
+   font-size: 18px;
+}
+
+input:focus,
+textarea:focus {
+   border: 1px solid #3989e3 !important;
+   outline: 0;
+}
+
+.payment_method_securesubmit div.payment_box input {
+   background: #fff;
+}
+
+.securesubmit-save-cards {
+   font-size: 14px;
+}
+
+.payment_method_securesubmit input {
+   padding: 15px 13px 13px 13px !important;
+   vertical-align: middle;
+   font-size: 18px !important;
+   line-height: 18px !important;
+   border-radius: 0 !important;
+}
+
+.payment_method_securesubmit input[type="tel"] {
+   padding: 0.5278em;
+}
+
+
+.payment_method_securesubmit input::-webkit-input-placeholder {
+   position: relative;
+   top: -2px;
+}
+
+.payment_method_securesubmit input:-moz-placeholder { /* Firefox 18- */
+   position: relative;
+   top: -2px;
+}
+
+.payment_method_securesubmit input::-moz-placeholder {  /* Firefox 19+ */
+   position: relative;
+   top: -2px;
+}
+
+.payment_method_securesubmit input:-ms-input-placeholder {
+   position: relative;
+   top: -2px;
+}
+
+
+/* arrow */
+.arrow {
+   display: inline-block;
+   float: left;
+   background-image: url(../images/arrow@2x.png);
+   background-size: 12px 12px;
+   width: 12px;
+   height: 12px;
+   position: relative;
+   top: 7px;
+   margin-right: 7px;
+}
+
+/* adds extra padding to content sections */
+
+.securesubmit-content {
+   padding: 0 1.5em;
+}
+
+.securesubmit-content .saved-creditcards-list {
+   margin-bottom: 0 !important;
+   padding-bottom: 0 !important;
+}
+
+/* screen reader for logo */
+
+.sr-only {
+   position: absolute;
+   width: 1px;
+   height: 1px;
+   padding: 0;
+   margin: -1px;
+   overflow: hidden;
+   clip: rect(0,0,0,0);
+   border: 0;
+}
+
+
+/* clearfix */
+
+.clearfix:after {
+   visibility: hidden;
+   display: block;
+   font-size: 0;
+   content: " ";
+   clear: both;
+   height: 0;
+}
+.clearfix { display: inline-block; }
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+
+
+
+@media only screen and (max-width : 800px) {
+   .saved-card p {
+      font-size: 13px !important;
+   }
+   .saved-card p span {
+      letter-spacing: 0;
+   }
+}
+
+@media only screen and (max-width : 768px) {
+   .saved-card .card-type-logo {
+      display: none;
+   }
+
+   .ss-section-header h6 {
+      width: 100%;
+      text-align: center;
+      font-size: 20px !important;
+   }
+
+   .saved-creditcards-list .button {
+      width: 100%;
+      text-align: center;
+      margin-top: 10px !important;
+   }
+   .securesubmit_new_card_info {
+      padding: 0 .5em .1em .5em;
+   }
+   .payment_method_securesubmit div.payment_box .securesubmit_new_card .securesubmit_new_card_info label {
+      font-size: 11px;
+   }
+
+}
+
+
+@media only screen and (max-width : 480px) {
+   .half-row {
+      width: 100% !important;
+   }
+   .saved-cards-option .button {
+      width: 100% !important;
+      margin-bottom: 25px !important;
+   }
+   .form-row-last {
+      margin-top: 15px;
+   }
+   .securesubmit-content {
+      margin: 0px -15px;
+   }
+   .securesubmit-description {
+      padding: inherit 15px;
+      text-align: center;
+   }
+   .saved-card, .saved-card-new {
+      height: auto;
+      padding-bottom: 5px;
+   }
+   .saved-card-selector {
+      padding: 0px 2%;
+      width: 13%;
+      border-right: 0;
+      margin-top: 12px;
+   }
+   .saved-card-info {
+      padding-left: 1px;
+      height: auto;
+      padding-top: 7px;
+      width: 80%;
+   }
+   .saved-card-info-new {
+      padding-left: 1px;
+      height: 41px;
+      padding-top: 7px;
+      width: 80%;
+      line-height: 10px;
+   }
+   .saved-card p {
+      line-height: 16px !important;
+   }
+
+   .payment_method_securesubmit div.payment_box .securesubmit_new_card .securesubmit_new_card_info label {
+      white-space: normal;
+   }
+
+}
+
+
+/* ALL RETINA DEVICES */
+
+@media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-devicepixel-ratio: 1.5), only screen and (min-resolution: 1.5dppx) {
+
+
+}
+
+
+/* GIFT CARDS */
+#gift-card-row#gift-card-row {
+    display: table;
+    margin: 1em 0 0;
+    padding-top: 1.5em;
+    border-top: 2px solid #DDD;
+}
+
+#gift-card-label {
+    display: table-row;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 1px;
+    white-space: nowrap;
+}
+
+#gift-card-input {
+    display: table-cell;
+    position: relative;
+    width: 100%;
+}
+
+#apply-gift-card {
+    display: table-cell;
+    white-space: nowrap;
+    margin-left: 1em;
+}
+
+#gift-card-number {
+    width: 70%;
+}
+
+#gift-card-pin {
+    width: 26%;
+}
